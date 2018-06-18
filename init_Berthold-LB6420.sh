@@ -7,7 +7,7 @@ export EPICS_CA_MAX_ARRAY_BYTES=1048576
 
 export PYEPICS_LIBCA=/root/base-3.15.5/lib/linux-arm/libca.so
 
-EPICS_CAS_SERVER_PORT=5064 /usr/bin/python /root/stream-ioc/interfaces/Berthold-LB6420.py 17001 &
+EPICS_CAS_SERVER_PORT=5064 /usr/bin/python /root/stream-ioc/interface/Berthold-LB6420.py 17001 &
 
 sleep 200
 
