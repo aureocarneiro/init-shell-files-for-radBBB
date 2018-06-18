@@ -11,7 +11,7 @@ EPICS_CAS_SERVER_PORT=5064 /usr/bin/python /root/stream-ioc/interface/Thermo-FHT
 
 sleep 200
 
-/bin/bash /root/stream-ioc/iocBoot/RAD2.cmd &
+/usr/bin/bash /root/stream-ioc/iocBoot/RAD2.cmd &
 
 EPICS_CAS_SERVER_PORT=5091 /usr/bin/python /root/stream-ioc/interfaces/RAD-Intergral.py RAD:THERMO:TotalDoseRate RAD:THERMO:DoseIntegral &
 

@@ -11,7 +11,7 @@ EPICS_CAS_SERVER_PORT=5064 /usr/bin/python /root/stream-ioc/interfaces/Berthold-
 
 sleep 200
 
-/bin/bash /root/stream-ioc/iocBoot/RAD1.cmd &
+/usr/bin/bash /root/stream-ioc/iocBoot/RAD1.cmd &
 
 EPICS_CAS_SERVER_PORT=5091 /usr/bin/python /root/stream-ioc/interface/RAD-Intergral.py RAD:Berthold:TotalDoseRate RAD:Berthold:DoseIntegral &
 
